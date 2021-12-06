@@ -99,6 +99,7 @@ print(">>>>>*")
 print("i1 * i2 : ", i1 * i2)
 print("f1 * f2 : ", f1 * f2)
 print("big_int1 * big_int2 : ", big_int1 * big_int2)
+print()
 
 # 형 변환 실습 (중요★)
 a = 3.
@@ -108,8 +109,10 @@ d = 12.7
 
 # 타입 출력
 print(type(a), type(b), type(c), type(d))
+print()
 
 # 형 변환
+print("# 형 변환")
 print(float(b))
 print(int(c))
 print(int(d))
@@ -119,16 +122,19 @@ print(complex(3))
 print(complex('3')) # 문자형을 숫자형으로 바꾼다음에 실행되는 것을 확인할 수 있다.
 print(complex(False))
 print(complex(True))
+print()
 
 # 수치 연산 함수
+print("# 수치 연산 함수")
 print(abs(-7)) #절대값 반환
 x, y = divmod(100, 8) #100을 8로 나눤 다음 몫과 나머지를 각각 변수에 할당
 # 많이 사용됨
 print(x, y)
 print(pow(5, 3), 5 ** 3) #제곱
+print()
 
 # 외부 모듈
 import math
-
+print("# 외부 모듈 사용")
 print(math.ceil(5.1)) # x 이상의 수 중에서 가장 작은 정수
 print(math.pi)

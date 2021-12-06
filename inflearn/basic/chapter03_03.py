@@ -15,6 +15,7 @@ print(len(c))
 
 # 인덱싱
 print('>>>>>')
+print('인덱싱')
 print('d - ', type(d), d)
 print('d - ', d[1])
 print('d - ', d[0] + d[1] + d[1])
@@ -24,12 +25,14 @@ print('e - ', list(e[-1][1]))
 
 # 슬라이싱
 print('>>>>>')
+print('리스트 슬라이싱')
 print('d - ', d[0:3])
 print('d - ', d[2:])
 print('e - ', e[-1][1:3])
 
 # 리스트 연산
 print('>>>>>')
+print('리스트 연산')
 print('c + d', c + d)
 print('c + d', d + c)
 print('c * 3', c * 3)
@@ -62,6 +65,7 @@ del c[2]
 print('c - ', c)
 
 ### 리스트 함수
+print('리스트 함수')
 a = [5, 2, 3, 1, 4]
 print('a  - ', a)
 # a[5] = 10 -> error

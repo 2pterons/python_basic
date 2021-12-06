@@ -118,13 +118,39 @@ for v in lt:
 
 print(False * 3)
 print(True * 3)
+print()
 
 # for - else
+print('# for - else')
 numbers = [14, 3, 4, 7, 10, 24, 17, 2, 33, 15, 34, 36, 38]
-
 for num in numbers:
     if num == 24:
-        print("Found : 24"
-        break
+        print("Found : 24")
+        break # break가 작동하면 else문은 작동하지 않는다.
 else:
-    print('Not Found : , 24)
+    print('Not Found : 24')
+print()
+
+# 구구단 출력
+for i in range(2, 10):
+    print("{}:".format(i), end='')
+    for j in range(1, 10):
+        print("{:4d}".format(i * j), end='')
+    print()
+# 공간 복잡도 계산 복잡도는 시간 복잡도와 계산 복잡도가 있다 어쩌구..
+# 총 81번이 실행 된다.
+
+# 구구단 출력(그냥 내가 만든 것)
+for i in range(2, 10):
+    for j in range(1, 10):
+        print(i, "*", j, "=", i*j)
+    print()
+
+# 변환 예제
+name2 = 'Aceman'
+
+print('Reversed', reversed(name2))
+print('List로 형변환', list(reversed(name2)))
+print('tuple로 형변환', tuple(reversed(name2)))
+print('set으로 형변환', set(reversed(name2))) #순서가 없어서 매번 랜덤으로 출력 (집합은 어떤 원소들이 뭉쳐있는 것을 중시하지 순서를 중시하지는 않음)
+# 이렇게 빠르게 형변환이 가능, 파이썬의 장점

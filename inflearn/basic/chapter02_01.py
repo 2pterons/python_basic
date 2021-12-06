@@ -43,6 +43,7 @@ print()
 # d: 정수
 # s: 문자열
 # f: 실수
+print("### format 사용")
 print('%s %s' % ('one', 'two'))
 print('{} {}'.format('one', 2))
 print('{1} {0}'.format('one', 'two'))
@@ -74,9 +75,12 @@ print('%.5s' % ('nice'))
 print('%.5s' % ('pythonstudy')) #공간이 다섯개이기 때문에 짤림
 print()
 
+print("### 주어진 공간안에 결과값")
 print('{:10.5}'.format('pythonstudy')) # 10개의 주어진 공간안에 결과값은 5개만 나온다.
+print('%10.5s' % ('pythonstudy'))
 
 # %d
+print("### 정수")
 print('%d %d' % (1,2))
 print('{} {}'.format(1,2))
 print()
@@ -84,9 +88,11 @@ print()
 print('%4d' % (42))
 print('%4d' % (421341234))
 print('{:4d}'.format(42)) #정수일 때는 format함수에서 d를 붙여줘야한다.
+print('{:4d}'.format(426516468468))
 print()
 
 # %f
+print('### 실수')
 print('%f' % (3.1434343434343434))
 print('%1.8f' % (3.1434343434343434))
 # 앞이 정수부 뒤가 소수부

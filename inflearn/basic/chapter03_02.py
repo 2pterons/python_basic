@@ -9,12 +9,15 @@ str3 = """ How are you? """
 str4 = '''Thank you!'''
 
 print(type(str1), type(str2), type(str3), type(str4))
+print("# 문자열 생성")
 print(len(str1))
+print()
 
 # 빈 문자열
 str1_t1 = ''
 str2_t2 = str()
 
+print("# 빈 문자열")
 print(type(str1_t1), len(str1_t1))
 print(type(str2_t2), len(str2_t2))
 

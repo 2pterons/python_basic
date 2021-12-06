@@ -45,6 +45,7 @@ print(c)
 #print(c)
 
 # 튜플 함수
+print('튜플 함수')
 a = (5, 2, 3, 1, 4)
 print('a - ', a)
 print('a - ', a.index(3))

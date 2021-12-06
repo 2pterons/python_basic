@@ -44,17 +44,19 @@ print()
 m = n
 # m -> 777 <- n
 print(m, n )# 파이썬에서는 콤마 뒤에는 띄어쓰기하는 것을 권장함
+print("고유값:", id(m), id(n))
 print(type(n), type(m))
-print()
 
-m = 400
+print()
 print(n, m)
 print()
+m = 400
 
 # id(identity)확인 : 객체의 고유값 확인
 m = 800
 n = 655
 
+print("### 고유값 확인")
 print(id(m))
 print(id(n))
 # 둘은 서로 다르다.

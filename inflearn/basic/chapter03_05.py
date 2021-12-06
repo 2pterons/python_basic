@@ -4,7 +4,7 @@
 # 딕셔너리 자료형(순서x, 키 중복x, 수정o, 삭제o)
 
 # 선언
-a = {'name':'Kim', 'Phone' : '01033337777', 'birth':'910406'}
+a = {'name':'Kim', 'Phone':'01033337777', 'birth':'910406'}
 b = {0:'Hello Python'}
 c = {'arr':[1, 2, 3, 4]}
 d = {
@@ -57,22 +57,26 @@ print('c - ', type(c), c)
 print('d - ', type(d), d)
 print('e - ', type(e), e)
 print('f - ', type(f), f)
+print()
 
+print('get함수')
 print('a - ', a['name']) # 존재x -> 에러발생
 print('a - ', a.get('name1')) # 존재x -> None 퍼리
 print('b - ', b[0])
 print('b - ', b.get(0))
 print('f - ', f.get('City'))
 print('f - ', f.get('Age'))
+print()
 
 # 딕셔너리 추가
+print('딕셔너리 추가')
 a['address'] = 'seoul'
 print('a - ', a)
 a['rank'] = [1,2,3]
 print('a - ', a)
 print()
 
-# 딕셔너러ㅣ 추가
+# 딕셔너리 추가
 print('a - ', len(a))
 print('b - ', len(b))
 print('c - ', len(c))
@@ -82,8 +86,8 @@ print()
 # 딕셔너리 함수
 # 주로 반복문을 사용하기 위해서 나온 함수들이 많다.
 # dict_keys, dict_values, dict_items : 반복문(__iter__)에서 사용 가능
-
-print('a - ', a.keys()) # 키 값들만 가져온다.
+print('딕셔너리 함수')
+print('a - ', a.keys()) # 키만 가져온다.
 print('b - ', b.keys())
 print('c - ', c.keys())
 print('d - ', d.keys())
@@ -128,6 +132,8 @@ print('a - ', 'City' in d)
 
 
 # 수정 & 추가
+print('수정&추가')
+print('a - ', a)
 a['test'] = 'test_dict'
 print('a - ', a)
 
